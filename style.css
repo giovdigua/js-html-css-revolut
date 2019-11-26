@@ -2,4 +2,62 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
+}
+
+.container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header{
+    height: 100px;
+    background-color: lightgray;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    line-height: 100px;
+
+}
+
+.header-left{
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+.header-left img{
+    height: 100%;
+    padding: 10px;
+
+}
+.header-right{
+    float: right;
+}
+ul#navigation li{
+    list-style-type:none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 10px;
+
+}
+ul#navigation li a{
+
+    text-decoration: none;
+    color:darkblue;
+}
+
+ul#navigation li ul.dropdown-menu{
+    position: absolute;
+    background-color: grey;
+    display: none;
+
+}
+ul#navigation li ul.dropdown-menu li{
+    display: block;
+    line-height: 50px;
+    margin: 0;
 }
